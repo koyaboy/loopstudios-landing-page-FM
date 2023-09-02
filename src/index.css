@@ -6,3 +6,17 @@
   --alata: 'Alata', sans-serif;
   --josefin: 'Josefin Sans', sans-serif;
 }
+
+/*GENERAL CLASSES*/
+.heading {
+  font-family: var(--josefin);
+}
+
+/*HEADER */
+.header-mobile {
+  background: url("./assets/images/mobile/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+}

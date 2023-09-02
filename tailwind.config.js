@@ -14,6 +14,13 @@ export default {
       'dark-gray': 'hsl(0, 0%, 55%)',
       'very-dark-gray': 'hsl(0, 0%, 41%)'
     },
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'alata': ['Alata', 'ui-sans-serif'],
+      'josefin': ['"Josefin Sans"', 'ui-sans-serif'],
+    }
   },
   plugins: [],
 }
