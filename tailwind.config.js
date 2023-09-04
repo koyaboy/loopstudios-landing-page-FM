@@ -20,6 +20,9 @@ export default {
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'alata': ['Alata', 'ui-sans-serif'],
       'josefin': ['"Josefin Sans"', 'ui-sans-serif'],
+    },
+    letterSpacing: {
+      widest: ".2em"
     }
   },
   plugins: [],
