@@ -2,9 +2,10 @@ import React from 'react'
 import logo from "../assets/images/logo.svg"
 
 import { iconClose, iconHamburger } from '../assets/images/images'
-
+// import imageHeroMobile from "../assets/images/mobile/image-hero.jpg"
 
 const Header = ({ toggleMenu, setToggleMenu }) => {
+    const isMobile = window.innerWidth < 768;
     return (
         <>
             {toggleMenu ?
@@ -26,17 +27,32 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
                     </div>
                 )
                 :
-                (
-                    <div className='header-mobile px-6 py-8'>
+                (<>
+                    <div className="bg-[url('./assets/images/mobile/image-hero.jpg')] md:bg-[url('./assets/images/desktop/image-hero.jpg')] bg-no-repeat bg-cover bg-center h-[650px] md:h-[350px] px-6 py-8 md:px-10">
                         <div className='flex justify-between items-center'>
                             <img src={logo} alt="logo" />
-                            <img src={iconHamburger} alt="icon-hamburger" onClick={() => setToggleMenu(true)} />
+                            <img
+                                src={iconHamburger}
+                                alt="icon-hamburger"
+                                onClick={() => setToggleMenu(true)}
+                                className='md:hidden'
+                            />
+                            <nav className='text-white font-josefin hidden md:block'>
+                                <ul className='flex gap-4 font-alata'>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Support</a></li>
+                                </ul>
+                            </nav>
                         </div>
 
-                        <div className='border border-white pl-4 py-4 relative top-44'>
-                            <div className='heading uppercase text-white text-4xl w-4/5'> Immersive experiences that deliver</div>
+                        <div className='border border-white pl-4 py-4 relative top-44 md:w-[45%] md:top-1/4'>
+                            <div className='heading uppercase text-white text-4xl w-4/5 '> Immersive experiences that deliver</div>
                         </div>
                     </div>
+                </>
                 )
             }
         </>

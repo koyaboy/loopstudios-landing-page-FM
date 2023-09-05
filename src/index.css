@@ -20,3 +20,11 @@
   background-repeat: no-repeat;
   height: 650px;
 }
+
+.header-desktop {
+  background: url("./assets/images/desktop/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+}

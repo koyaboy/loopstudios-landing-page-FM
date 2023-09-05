@@ -14,7 +14,7 @@ export { default as deepEarthDesktop } from "./desktop/image-deep-earth.jpg"
 export { default as fishEyeDesktop } from "./desktop/image-fisheye.jpg"
 export { default as fromAboveDesktop } from "./desktop/image-from-above.jpg"
 export { default as gridDesktop } from "./desktop/image-grid.jpg"
-export { default as nightArcadDesktop } from "./desktop/image-night-arcade.jpg"
+export { default as nightArcadeDesktop } from "./desktop/image-night-arcade.jpg"
 export { default as pocketBorealisDesktop } from "./desktop/image-pocket-borealis.jpg"
 export { default as soccerTeamDesktop } from "./desktop/image-soccer-team.jpg"
 
