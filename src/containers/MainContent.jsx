@@ -7,7 +7,7 @@ import * as images from "../assets/images/images.js"
 const MainContent = () => {
     return (
         <>
-            <div className='px-6 py-20 md:px-10'>
+            <div className='px-3 py-20 md:px-10 lg:px-16 '>
                 <div className='md:grid md:grid-cols-2'>
                     <img
                         src={images.interactiveMobile}
@@ -17,8 +17,13 @@ const MainContent = () => {
                     <img
                         src={images.interactiveDesktop}
                         alt="image-interactive-desktop"
-
+                        className='cropped-interactive-desktop'
                     />
+                    {/* <div class="image-container">
+                        <div class="crop-overlay"></div>
+                        <img src={images.interactiveDesktop} alt="Your Image" />
+                    </div> */}
+
                     <div className='px-4 text-center'>
                         <h2 className='heading uppercase mt-10 text-3xl'>  The leader in interactive VR</h2>
                         <p className='mt-3 text-dark-gray font-alata'>Founded in 2011, Loopstudios has been producing world-class virtual reality
@@ -32,7 +37,7 @@ const MainContent = () => {
                 {/* OUR CREATIONS */}
                 <div className='mt-24 flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center'>
                     <h2 className='heading uppercase text-3xl mb-4 md:order-1 md:mb-0'>Our creations</h2>
-                    <div className='w-full md:hidden md:block'>
+                    <div className='w-full md:hidden'>
                         <Creation image={images.deepEarthMobile} title="DEEP EARTH" type="mobile" />
                         <Creation image={images.nightArcadeMobile} title="NIGHT ARCADE" type="mobile" />
                         <Creation image={images.soccerTeamMobile} title="SOCCER TEAM VR" type="mobile" />
@@ -42,7 +47,8 @@ const MainContent = () => {
                         <Creation image={images.curiosityMobile} title="THE CURIOSITY" type="mobile" />
                         <Creation image={images.fishEyeMobile} title="MAKE IT FISHEYE" type="mobile" />
                     </div>
-                    <div className='hidden md:grid md:grid-cols-4 md:gap-4 md:order-3 md:mt-16 '>
+
+                    <div className='hidden md:grid md:grid-cols-4 md:gap-4 md:order-3 md:mt-14 w-full'>
                         <Creation image={images.deepEarthDesktop} title="DEEP EARTH" type="desktop" />
                         <Creation image={images.nightArcadeDesktop} title="NIGHT ARCADE" type="desktop" />
                         <Creation image={images.soccerTeamDesktop} title="SOCCER TEAM VR" type="desktop" />

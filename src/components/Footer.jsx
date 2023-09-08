@@ -4,7 +4,7 @@ import { iconFacebook, iconTwitter, iconPinterest, iconInstagram } from "../asse
 
 const Footer = () => {
     return (
-        <div className='py-12 flex flex-col items-center bg-black gap-4 text-white font-alata md:px-10 md:flex-row md:justify-between md:items-start'>
+        <div className='py-12 flex flex-col items-center bg-black gap-4 text-white font-alata md:px-10 lg:px-16 md:flex-row md:justify-between md:items-start'>
             <div className='flex flex-col gap-4'>
                 <img src={logo} alt="logo" className='w-32' />
                 <nav className='text-center'>
