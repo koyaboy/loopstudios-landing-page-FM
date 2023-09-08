@@ -7,24 +7,25 @@ import * as images from "../assets/images/images.js"
 const MainContent = () => {
     return (
         <>
-            <div className='px-3 py-20 md:px-10 lg:px-16 '>
-                <div className='md:grid md:grid-cols-2'>
+            <div className='px-3 py-20 md:px-10 lg:px-16 xl:px-24 '>
+                <div className='md:grid md:grid-cols-2 md:items-center md:gap-6'>
                     <img
                         src={images.interactiveMobile}
                         alt="image-interactive-mobile"
                         className='w-full md: hidden'
+                        data-aos="fade-up"
                     />
                     <img
                         src={images.interactiveDesktop}
                         alt="image-interactive-desktop"
                         className='cropped-interactive-desktop'
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
                     />
-                    {/* <div class="image-container">
-                        <div class="crop-overlay"></div>
-                        <img src={images.interactiveDesktop} alt="Your Image" />
-                    </div> */}
-
-                    <div className='px-4 text-center'>
+                    <div className='px-4 text-center md:text-left'
+                        data-aos="fade-down-left"
+                        data-aos-duration="1500"
+                    >
                         <h2 className='heading uppercase mt-10 text-3xl'>  The leader in interactive VR</h2>
                         <p className='mt-3 text-dark-gray font-alata'>Founded in 2011, Loopstudios has been producing world-class virtual reality
                             projects for some of the best companies around the globe. Our award-winning
@@ -35,7 +36,10 @@ const MainContent = () => {
                 </div>
 
                 {/* OUR CREATIONS */}
-                <div className='mt-24 flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center'>
+                <div className='mt-24 flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center'
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                >
                     <h2 className='heading uppercase text-3xl mb-4 md:order-1 md:mb-0'>Our creations</h2>
                     <div className='w-full md:hidden'>
                         <Creation image={images.deepEarthMobile} title="DEEP EARTH" type="mobile" />
