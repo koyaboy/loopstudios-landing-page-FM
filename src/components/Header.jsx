@@ -46,8 +46,8 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
                     >
                         <div className='header-overlay'></div>
                         <div className='flex justify-between items-center'
-                        // data-aos="fade-down"
-                        // data-aos-duration="1500"
+                            data-aos="fade-down"
+                            data-aos-duration="1500"
                         >
                             <img src={logo} alt="logo" className='z-20' />
                             <img
@@ -69,8 +69,8 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
 
                         <div className='border border-white pl-4 py-4 relative top-44 md:w-[55%] lg:w-[45%] xl:w-[45%] md:top-1/4 z-20'>
                             <div className='heading uppercase text-white text-5xl xl:text-6xl '
-                            // data-aos="fade-right" 
-                            // data-aos-duration="1500"
+                                data-aos="fade-right"
+                                data-aos-duration="1500"
                             > Immersive experiences that deliver</div>
                         </div>
                     </div>
