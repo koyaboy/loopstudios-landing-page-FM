@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from "../assets/images/logo.svg"
 
 import { iconClose, iconHamburger } from '../assets/images/images'
 
 
 const Header = ({ toggleMenu, setToggleMenu }) => {
+    const handleResize = () => {
+        if (window.innerWidth >= 768) {
+            setToggleMenu(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <>
             {toggleMenu ?
@@ -53,7 +66,7 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
                         </div>
 
                         <div className='border border-white pl-4 py-4 relative top-44 md:w-[55%] lg:w-[45%] xl:w-[45%] md:top-1/4 z-20'>
-                            <div className='heading uppercase text-white text-5xl xl:text-6xl ' data-aos="fade-right" data-aos-duration="1800"> Immersive experiences that deliver</div>
+                            <div className='heading uppercase text-white text-5xl xl:text-6xl ' data-aos="fade-right" data-aos-duration="1500"> Immersive experiences that deliver</div>
                         </div>
                     </div>
                 </>
