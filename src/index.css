@@ -34,6 +34,16 @@
   z-index: 1
 }
 
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 55%, 0.75);
+  z-index: 10
+}
+
 /*ANIMATIONS*/
 
 @keyframes slide-left {
@@ -48,4 +58,42 @@
 
 .slide-left {
   animation: slide-left 0.3s ease-in;
+}
+
+.main li,
+.footer li,
+.icons div {
+  position: relative;
+}
+
+.main li::after,
+.footer li::after,
+.icons div::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  bottom: -8px;
+
+  transition: width 0.3s;
+}
+
+.main li::after,
+.footer li::after {
+  left: 25%;
+}
+
+.icons div::after {
+  left: 0
+}
+
+.main li:hover::after,
+.footer li:hover::after {
+  width: 50%;
+}
+
+.icons div:hover::after {
+  width: 100%;
 }

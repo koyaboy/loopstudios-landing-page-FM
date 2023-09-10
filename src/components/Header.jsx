@@ -2,10 +2,9 @@ import React from 'react'
 import logo from "../assets/images/logo.svg"
 
 import { iconClose, iconHamburger } from '../assets/images/images'
-// import imageHeroMobile from "../assets/images/mobile/image-hero.jpg"
+
 
 const Header = ({ toggleMenu, setToggleMenu }) => {
-    const isMobile = window.innerWidth < 768;
     return (
         <>
             {toggleMenu ?
@@ -13,7 +12,7 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
                     <div className='bg-black w-screen h-screen px-5 py-5 slide-left'>
                         <div className='flex justify-between items-center'>
                             <img src={logo} alt="logo" />
-                            <img src={iconClose} alt="close-icon" onClick={() => setToggleMenu(false)} />
+                            <img src={iconClose} alt="close-icon" onClick={() => setToggleMenu(false)} className='cursor-pointer' />
                         </div>
                         <nav className='text-white mt-[35%] font-josefin'>
                             <ul className='flex flex-col gap-4'>
@@ -34,16 +33,16 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
                         data-aos="fade"
                     >
                         <div className='header-overlay'></div>
-                        <div className='flex justify-between items-center' data-aos="fade-down">
+                        <div className='flex justify-between items-center' data-aos="fade-down" data-aos-duration="1500">
                             <img src={logo} alt="logo" className='z-20' />
                             <img
                                 src={iconHamburger}
                                 alt="icon-hamburger"
                                 onClick={() => setToggleMenu(true)}
-                                className='md:hidden z-20'
+                                className='md:hidden z-20 cursor-pointer'
                             />
                             <nav className='text-white font-josefin hidden md:block z-20'>
-                                <ul className='flex gap-4 font-alata'>
+                                <ul className='main flex gap-4 font-alata'>
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Careers</a></li>
                                     <li><a href="#">Events</a></li>
@@ -54,7 +53,7 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
                         </div>
 
                         <div className='border border-white pl-4 py-4 relative top-44 md:w-[55%] lg:w-[45%] xl:w-[45%] md:top-1/4 z-20'>
-                            <div className='heading uppercase text-white text-5xl xl:text-6xl ' data-aos="fade-right"> Immersive experiences that deliver</div>
+                            <div className='heading uppercase text-white text-5xl xl:text-6xl ' data-aos="fade-right" data-aos-duration="1800"> Immersive experiences that deliver</div>
                         </div>
                     </div>
                 </>

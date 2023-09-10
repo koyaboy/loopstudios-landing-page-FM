@@ -11,7 +11,7 @@ const Footer = () => {
             >
                 <img src={logo} alt="logo" className='w-32' />
                 <nav className='text-center'>
-                    <ul className='flex flex-col gap-4 md:flex-row'>
+                    <ul className='footer flex flex-col gap-4 md:flex-row'>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Events</a></li>
@@ -23,11 +23,11 @@ const Footer = () => {
 
             <div className='flex flex-col gap-4'
             >
-                <div className='flex gap-3 mt-6 justify-center md:mt-0'>
-                    <img src={iconFacebook} alt="facebook-icon" />
-                    <img src={iconTwitter} alt="twitter-icon" />
-                    <img src={iconPinterest} alt="pinterest-icon" />
-                    <img src={iconInstagram} alt="instagram-icon" />
+                <div className='icons flex gap-3 mt-6 justify-center items-center md:mt-0'>
+                    <div className='cursor-pointer'><img src={iconFacebook} alt="facebook-icon" /></div>
+                    <div className='cursor-pointer'><img src={iconTwitter} alt="twitter-icon" /></div>
+                    <div className='cursor-pointer'><img src={iconPinterest} alt="pinterest-icon" /></div>
+                    <div className='cursor-pointer'> <img src={iconInstagram} alt="instagram-icon" /></div>
                 </div>
                 <div className="text-dark-gray text-sm">© 2021 Loopstudios. All rights reserved.</div>
             </div>
