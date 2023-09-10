@@ -43,10 +43,12 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
 
                     <div className="bg-[url('./assets/images/mobile/image-hero.jpg')] md:bg-[url('./assets/images/desktop/image-hero.jpg')] 
                     bg-no-repeat bg-cover bg-center h-[650px] md:h-[400px] lg:h-[500px] xl:h-[550px] px-3 py-8 md:px-10 lg:px-16 xl:px-24 relative"
-                    // data-aos="fade"
                     >
                         <div className='header-overlay'></div>
-                        <div className='flex justify-between items-center' data-aos="fade-down" data-aos-duration="1500">
+                        <div className='flex justify-between items-center'
+                        // data-aos="fade-down"
+                        // data-aos-duration="1500"
+                        >
                             <img src={logo} alt="logo" className='z-20' />
                             <img
                                 src={iconHamburger}

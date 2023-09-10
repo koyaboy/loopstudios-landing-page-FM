@@ -41,8 +41,8 @@ const MainContent = () => {
 
                 {/* OUR CREATIONS */}
                 <div className='mt-24 flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center'
-                    data-aos="fade-right"
-                    data-aos-duration="2000"
+                // data-aos="fade-right"
+                // data-aos-duration="2000"
                 >
                     <h2 className='heading uppercase text-3xl mb-4 md:order-1 md:mb-0'>Our creations</h2>
                     <div className='w-full md:hidden'>
