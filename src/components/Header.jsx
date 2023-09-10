@@ -43,7 +43,7 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
 
                     <div className="bg-[url('./assets/images/mobile/image-hero.jpg')] md:bg-[url('./assets/images/desktop/image-hero.jpg')] 
                     bg-no-repeat bg-cover bg-center h-[650px] md:h-[400px] lg:h-[500px] xl:h-[550px] px-3 py-8 md:px-10 lg:px-16 xl:px-24 relative"
-                        data-aos="fade"
+                    // data-aos="fade"
                     >
                         <div className='header-overlay'></div>
                         <div className='flex justify-between items-center' data-aos="fade-down" data-aos-duration="1500">
@@ -66,7 +66,10 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
                         </div>
 
                         <div className='border border-white pl-4 py-4 relative top-44 md:w-[55%] lg:w-[45%] xl:w-[45%] md:top-1/4 z-20'>
-                            <div className='heading uppercase text-white text-5xl xl:text-6xl ' data-aos="fade-right" data-aos-duration="1500"> Immersive experiences that deliver</div>
+                            <div className='heading uppercase text-white text-5xl xl:text-6xl '
+                            // data-aos="fade-right" 
+                            // data-aos-duration="1500"
+                            > Immersive experiences that deliver</div>
                         </div>
                     </div>
                 </>

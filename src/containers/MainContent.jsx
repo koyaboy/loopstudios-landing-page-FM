@@ -14,21 +14,21 @@ const MainContent = () => {
                         src={images.interactiveMobile}
                         alt="image-interactive-mobile"
                         className='w-full md:hidden object-cover'
-                        data-aos="zoom-in"
-                        data-aos-duration="800"
+                    // data-aos="zoom-in"
+                    // data-aos-duration="800"
                     />
                     <div className='hidden md:block lg:col-start-1 lg:col-end-6 lg:row-start-1 lg:row-end-6 z-0'>
                         <img
                             src={images.interactiveDesktop}
                             alt="image-interactive-desktop"
                             className='w-full h-full z-0 object-cover'
-                            data-aos="zoom-in"
+                        // data-aos="zoom-in"
                         />
                     </div>
 
                     <div className='px-4 text-center lg:text-left lg:col-start-5 lg:col-end-9 lg:row-start-3 lg:row-end-6 lg:z-20 lg:bg-white lg:pl-24 lg:pt-16 lg:flex lg:flex-col lg:justify-end '
-                        data-aos="fade-up"
-                        data-aos-duration="1200"
+                    // data-aos="fade-up"
+                    // data-aos-duration="1200"
                     >
                         <h2 className='w-full heading uppercase mt-10 text-3xl lg:mt-0 md:text-4xl lg:text-5xl z-20'>  The leader in interactive VR</h2>
                         <p className='w-full mt-3 text-dark-gray font-alata z-30 lg:mt-6 md:text-lg'>Founded in 2011, Loopstudios has been producing world-class virtual reality
