@@ -9,7 +9,7 @@ const Header = ({ toggleMenu, setToggleMenu }) => {
         <>
             {toggleMenu ?
                 (
-                    <div className='bg-black w-screen h-screen px-5 py-5 slide-left md:hidden'>
+                    <div className='bg-black w-screen h-screen px-5 py-5 slide-left'>
                         <div className='flex justify-between items-center'>
                             <img src={logo} alt="logo" />
                             <img src={iconClose} alt="close-icon" onClick={() => setToggleMenu(false)} className='cursor-pointer' />
